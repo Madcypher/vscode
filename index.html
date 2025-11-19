@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vibe Coding Cafe — Work Together</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Vibe Coding Cafe</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#membership" class="btn">Membership</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h2>Find Your Flow. Join the Vibe.</h2>
+            <p class="lead">
+              Vibe Coding Cafe is a members-only co-working spot for people who
+              code, collaborate, and create. Subscribe, scan your access token
+              at the door, and step into a focused, friendly workspace.
+            </p>
+            <p>
+              <a href="#membership" class="cta">Get Membership</a>
+              <a href="#features" class="cta secondary">See Features</a>
+            </p>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="mock-cafe">
+              <div class="mock-desk"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <h3>What is Vibe Coding Cafe?</h3>
+        <p>
+          It's a small, curated co-working space for developers, designers, and
+          makers who appreciate good coffee, quiet zones, and a collaborative
+          atmosphere. Membership is required to open the door — we keep the
+          space comfortable and for focused work.
+        </p>
+      </section>
+
+      <section id="features" class="container section features">
+        <h3>Why Members Love It</h3>
+        <ul>
+          <li>
+            <strong>Quiet Focus Areas:</strong> Respectful work zones and
+            noise-aware design.
+          </li>
+          <li>
+            <strong>Fast Wi‑Fi & Power:</strong> Reliable connections and
+            powered desks.
+          </li>
+          <li>
+            <strong>Community Events:</strong> Weekly pairing sessions,
+            lightning talks, and socials.
+          </li>
+        </ul>
+      </section>
+
+      <section id="membership" class="container section membership">
+        <h3>Membership & Door Access</h3>
+        <p>
+          To enter the cafe you need a valid subscription token. Use the demo
+          form below to simulate entering your subscription code. For a real
+          deployment this would be handled by a secure backend and an access
+          control system.
+        </p>
+
+        <form
+          id="accessForm"
+          class="access-form"
+          aria-label="Membership access form"
+        >
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@domain.com"
+            required
+          />
+
+          <label for="token">Subscription Token</label>
+          <input
+            id="token"
+            name="token"
+            type="text"
+            placeholder="Enter your token"
+            required
+          />
+
+          <button type="submit" class="btn">Open Door</button>
+        </form>
+
+        <div id="doorStatus" class="door locked" aria-live="polite">
+          Door locked — members only
+        </div>
+
+        <div class="note">Demo token: <code>VIBE123</code></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© Vibe Coding Cafe — Work together, stay in the vibe.</small>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
