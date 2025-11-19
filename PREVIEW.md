@@ -9,3 +9,4 @@ Files added:
 - `script.js` — demo subscription / door access logic (demo token: `VIBE123`)
 
 Demo token: `VIBE123`
+
